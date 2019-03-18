@@ -416,7 +416,7 @@ wim_account_new_schema = {
         "name": name_schema,
         "description": description_schema,
         "wim": name_schema,
-        "wim_type": {"enum": ["tapi", "onos", "odl", "dynpac"]},
+        "wim_type": {"enum": ["tapi", "onos", "odl", "dynpac", "dpb"]},
         "wim_url": description_schema,
         "user": shortname_schema,
         "password": passwd_schema,
@@ -661,7 +661,7 @@ nsi_vld_instantiate = {
         "vim-network-id": {"OneOf": [string_schema, object_schema]},
         "ip-profile": object_schema,
     },
-    "required": ["name"], 
+    "required": ["name"],
     "additionalProperties": False
 }
 
@@ -698,7 +698,7 @@ nsi_action = {
 }
 
 nsi_terminate = {
-    
+
 }
 
 
